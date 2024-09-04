@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Registration Form</h1>
+        <form name="fl" onsubmit="return validate();">
+            <table>
+                <tr>
+                    <td>Name:</td>
+                    <td><input type="text" name="name" id="name"></td>
+                </tr>
+                <tr>
+                    <td>Password:</td>
+                    <td><input type="password" name="password" id="password"></td>
+                </tr>
+                <tr>
+                    <td>Email:</td>
+                    <td><input type="email" name="email" id="email"></td>
+                </tr>
+                <tr>
+                    <td>Phone Number:</td>
+                    <td><input type="text" name="phone" id="phone"></td>
+                </tr>
+                <tr>
+                    <td valign="top">Gender:</td>
+                    <td>
+                        <input type="radio" name="gender" value="male" id="male"> Male &nbsp;&nbsp;
+                        <input type="radio" name="gender" value="female" id="female"> Female
+                    </td>
+                </tr>
+                <tr>
+                    <td>Languages Known:</td>
+                    <td>
+                        <input type="checkbox" name="lang" value="C"> C
+                        <input type="checkbox" name="lang" value="cpp"> C++
+                        <input type="checkbox" name="lang" value="Java"> Java
+                        <input type="checkbox" name="lang" value="Python"> Python
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" class="submit-reset">
+                        <input type="submit" value="Submit">
+                        <input type="reset" value="Reset">
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+
